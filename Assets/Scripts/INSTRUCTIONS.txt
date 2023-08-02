@@ -1,0 +1,18 @@
+YOU MUST HAVE UNITY
+
+Thank you for downloading this shitty package and I give you good luck for your game.
+Most of this is by BRACKEYS, the goat so don't give credit to me.
+anyways \/ \/ \/
+
+You need a ground check, a graphics model, and a camera.
+on the parent of all of this you should have a character controller. also equip the Player Movement script.
+
+equip graphics but disable/remove the collision component
+
+equip the MAIN CAMERA onto the character if you didn't already and put the mouse look script onto it
+
+now create an empty gameObject and put it onto the bottom of your character
+
+now go to the player (the parent of all this) and assign all the values, look in the script to change some things
+
+there ya go :)
