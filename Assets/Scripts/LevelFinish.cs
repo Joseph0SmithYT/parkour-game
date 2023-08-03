@@ -6,6 +6,6 @@ public class LevelFinish : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        GameManager.NextLevel(); 
+        GameManager.NextLevel();
     }
 }
