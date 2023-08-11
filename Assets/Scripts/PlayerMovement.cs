@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Cinemachine;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -96,13 +97,15 @@ public class PlayerMovement : MonoBehaviour
             }
         }
         #endregion
-        // Dying
+        // Void Death
         if (transform.position.y <= -10f) Death();
+        // Dash
         if (Input.GetKeyDown(KeyCode.E) && Time.time >= lastUsedTime + cooldownDuration)
         {
             StartCoroutine(Dash());
             lastUsedTime = Time.time; // Update the last used time
         }
+        if (Input.GetKeyDown(KeyCode.Backspace)) { SceneManager.LoadScene(0); }
     }
     
     public void Death() {

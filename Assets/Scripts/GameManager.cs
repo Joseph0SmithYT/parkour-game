@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public static class GameManager
 {
+    #region Level
     public static void NextLevel()
     {
         int activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -28,4 +29,5 @@ public static class GameManager
             return false; // Scene does not exist
         }
     }
+    #endregion
 }
