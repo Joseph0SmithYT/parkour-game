@@ -97,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
         }
         #endregion
         // Dying
-        
+        if (transform.position.y <= -10f) Death();
         if (Input.GetKeyDown(KeyCode.E) && Time.time >= lastUsedTime + cooldownDuration)
         {
             StartCoroutine(Dash());

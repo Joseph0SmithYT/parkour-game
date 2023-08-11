@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Spinning : MonoBehaviour
 {
-    public float spinningSpeed = 10f;
+    public float spinningSpeed = 50f;
 
     // Start is called before the first frame update
     void Start()
