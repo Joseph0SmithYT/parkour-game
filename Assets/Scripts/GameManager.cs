@@ -3,20 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public static class GameManager
+public class GameManager : MonoBehaviour
 {
+
     #region Level
-    public static void NextLevel()
-    {
-        int activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        if (CheckSceneExists(activeSceneIndex + 1))
+    public Animator transition;
+    public void NextLevel(int sceneIndex)
+    { 
+        if (CheckSceneExists(sceneIndex))
         {
-            SceneManager.LoadScene(activeSceneIndex + 1);
+            StartCoroutine(NextLevelCoroutine(sceneIndex));
         }
-        else SceneManager.LoadScene(0);
+        else StartCoroutine(NextLevelCoroutine(0));
     }
 
     // Start is called before the first frame update
+    IEnumerator NextLevelCoroutine(int activeSceneIndex)
+    {
+        transition.SetTrigger("Start");
+        yield return new WaitForSeconds(2f);
+        Debug.Log(activeSceneIndex);
+        SceneManager.LoadScene(activeSceneIndex);
+    }
 
     static public bool CheckSceneExists(int buildIndex)
     {

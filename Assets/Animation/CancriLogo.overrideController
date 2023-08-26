@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CancriLogo
+  m_Controller: {fileID: 9100000, guid: 4879c4cccd58fb942ac22e5f7ae8ad66, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: d29ba73704167f344be8915ffb82038e, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 42766ac43c7950a4bbeb7eb9af199c6e, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 0b7d84a41b475094294f7cc7d9c14477, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ee7a6f8995bd98e41aaef5d78015a120, type: 2}

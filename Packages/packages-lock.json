@@ -9,13 +9,6 @@
         "com.unity.modules.unitywebrequest": "1.0.0"
       }
     },
-    "com.spoiledcat.git": {
-      "version": "1.0.12",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://registry.spoiledcat.com"
-    },
     "com.unity.cinemachine": {
       "version": "2.9.7",
       "depth": 0,
